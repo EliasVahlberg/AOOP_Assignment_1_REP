@@ -1,5 +1,34 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
 
 \title{AOOP Assignment 1 }
 \author{elias.vahlberg.2 }
@@ -36,6 +65,18 @@ pay for them with a credit card. Draw a UML diagram that shows the relationships
 between these classes:}\\
 \subsection*{3) Exercise 2.13 in the course book.}
 \textit{Consider this test program:}
+\begin{verbatim}
+public class Tester
+{
+    public static void main(String[] args)
+    {
+        String s = "Hello World";
+        Scanner in = new Scanner(s);
+        while (in.hasNext())
+            System.out.println(in.next());
+    }
+}
+\end{verbatim}
 
 
 
