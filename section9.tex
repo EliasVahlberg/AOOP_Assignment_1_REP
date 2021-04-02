@@ -1,9 +1,62 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
-\subsection*{(9) (*) Re-implement the stack class from assignment 7 with message elements.}
+\subsection*{9) (*) Re-implement the stack class from assignment 7 with message elements.}
 \textit{Re-implement the stack class from assignment 7 this time with message elements (same as
 elements in message queue) and implement a method size() which returns the number of the
 messages in the stack.}\\
 \indent \textbf{\textcolor{blue}{Solution:}} \\
 MessageStack.java : \ref{lst:MessageStack} \\
+
+
+\subsection*{10) Add the methods multAdd() and multRemove() to the message queue class}
+\textit{Add two following methods to the message queue class (which is a circular array). The first
+method, multAdd(m1, m2, ..., mn), is an extension of the add method which adds a set of
+elements to the circular array instead of one element. The second method, multRemove(n), is an
+extension of the remove method which removes n elements from the queue instead of one. Check
+the correctness of your implementation using JUnit.}\\
+\indent \textbf{\textcolor{blue}{Solution:}} \\
+MessageQueue.java : \ref{lst:MessageQueue} \\
+MessageQueueTest.java : \ref{lst:MessageQueueTest}
+
+
+\subsection*{12) (*) Exercise 4.1 in the course book}
+\textit{When sorting a collection of objects that implements the
+Comparable type, the sorting method compares and rearranges the objects. Explain the role of
+polymorphism in this situation.}
+\indent \textbf{\textcolor{blue}{Awnser:}} \\
+    The comparable interface allows the use of sorting based on the inherited method compareTo().
+    This is internally unique but from an external point of view it handled the same.
+    The word Polymorphism means "many forms" which exactly describes the function compareTo()
+    since it is used to preform many different tasks depending on where it is implemented.
+
+
+\subsection*{13) Exercise 4.6 in the course book}
+\textit{Write a method
+public static String maximum(ArrayList<String> a, Comparator<String> c) { . . . }
+that computes the largest string in the array list using the ordering relation that is defined by the
+given comparator. Supply a test program that uses this method to find the longest string in the
+list.}\\
+\indent \textbf{\textcolor{blue}{Solution:}} \\
+Exercise406.java : \ref{lst:Exercise406}
+
+\subsection*{14) (*) Exercise 4.9 in the course book}
+\textit{Define an interface type Filter as follows:
+}\\
+Filter.java : \ref{lst:Filter}
+Then suply a method:
+\begin{verbatim}
+    public static String[] filter(String[] a, Filter f) { . . . }   
+\end{verbatim}
+\textit{that returns an array containing all the elements of a that are accepted by the filter. Test your
+method by filtering an array of strings and accepting all strings that contain at most three characters.
+}
+\indent \textbf{\textcolor{blue}{Solution:}} \\
+Exercise409.java : \ref{lst:Exercise409}
+
+\subsection*{15) (*) Exercise 4.14 in the course book}
+\indent \textbf{\textcolor{blue}{Solution:}} \\
+Exercise414.java : \ref{lst:Exercise414}\\
+CircleIcon.java : \ref{lst:CircleIcon}\\
+
+
 \end{document}
